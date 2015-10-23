@@ -1,0 +1,3 @@
+protocol ExampleProtocol {
+    func zeroArgumentCommand()
+}

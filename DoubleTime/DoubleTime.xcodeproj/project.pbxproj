@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		250CE96B1BD9957600727FC9 /* DoubleTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 250CE96A1BD9957600727FC9 /* DoubleTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		250CE9721BD9957600727FC9 /* DoubleTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CE9671BD9957600727FC9 /* DoubleTime.framework */; };
-		250CE9771BD9957600727FC9 /* DoubleTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9761BD9957600727FC9 /* DoubleTimeTests.swift */; };
+		250CE9771BD9957600727FC9 /* SpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9761BD9957600727FC9 /* SpyTests.swift */; };
+		250CE9821BD9B49000727FC9 /* ExampleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9811BD9B49000727FC9 /* ExampleProtocol.swift */; };
+		250CE9841BD9B4D500727FC9 /* ExampleDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */; };
+		250CE9861BD9B51300727FC9 /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9851BD9B51300727FC9 /* TestDouble.swift */; };
+		250CE9881BD9B61C00727FC9 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9871BD9B61C00727FC9 /* Assertions.swift */; };
+		250CE98A1BDADBCC00727FC9 /* CallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9891BDADBCC00727FC9 /* CallHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +32,13 @@
 		250CE96A1BD9957600727FC9 /* DoubleTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleTime.h; sourceTree = "<group>"; };
 		250CE96C1BD9957600727FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		250CE9711BD9957600727FC9 /* DoubleTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		250CE9761BD9957600727FC9 /* DoubleTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTimeTests.swift; sourceTree = "<group>"; };
+		250CE9761BD9957600727FC9 /* SpyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyTests.swift; sourceTree = "<group>"; };
 		250CE9781BD9957600727FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		250CE9811BD9B49000727FC9 /* ExampleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleProtocol.swift; sourceTree = "<group>"; };
+		250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDouble.swift; sourceTree = "<group>"; };
+		250CE9851BD9B51300727FC9 /* TestDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
+		250CE9871BD9B61C00727FC9 /* Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
+		250CE9891BDADBCC00727FC9 /* CallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 		250CE9691BD9957600727FC9 /* DoubleTime */ = {
 			isa = PBXGroup;
 			children = (
+				250CE9871BD9B61C00727FC9 /* Assertions.swift */,
+				250CE9851BD9B51300727FC9 /* TestDouble.swift */,
+				250CE9891BDADBCC00727FC9 /* CallHandler.swift */,
 				250CE96A1BD9957600727FC9 /* DoubleTime.h */,
 				250CE96C1BD9957600727FC9 /* Info.plist */,
 			);
@@ -80,7 +93,9 @@
 		250CE9751BD9957600727FC9 /* DoubleTimeTests */ = {
 			isa = PBXGroup;
 			children = (
-				250CE9761BD9957600727FC9 /* DoubleTimeTests.swift */,
+				250CE9761BD9957600727FC9 /* SpyTests.swift */,
+				250CE9811BD9B49000727FC9 /* ExampleProtocol.swift */,
+				250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */,
 				250CE9781BD9957600727FC9 /* Info.plist */,
 			);
 			path = DoubleTimeTests;
@@ -194,6 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				250CE9881BD9B61C00727FC9 /* Assertions.swift in Sources */,
+				250CE98A1BDADBCC00727FC9 /* CallHandler.swift in Sources */,
+				250CE9861BD9B51300727FC9 /* TestDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250CE9771BD9957600727FC9 /* DoubleTimeTests.swift in Sources */,
+				250CE9841BD9B4D500727FC9 /* ExampleDouble.swift in Sources */,
+				250CE9821BD9B49000727FC9 /* ExampleProtocol.swift in Sources */,
+				250CE9771BD9957600727FC9 /* SpyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,28 +328,33 @@
 		250CE97C1BD9957600727FC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DoubleTime/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingzeal.DoubleTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		250CE97D1BD9957600727FC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DoubleTime/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codingzeal.DoubleTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
