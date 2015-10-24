@@ -20,7 +20,6 @@ class SpyTests: XCTestCase {
     }
 
     func testNegativeAssertion() {
-        double.zeroArgumentCommand()
         AssertDouble(double, wasNotSent: "zeroArgumentCommand()")
     }
 }
