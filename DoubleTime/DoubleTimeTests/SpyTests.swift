@@ -13,4 +13,14 @@ class SpyTests: XCTestCase {
     func testFailsWhenSpyWasNotCalled() {
         XCTAssertFalse(double.wasSent("zeroArgumentCommand()"))
     }
+
+    func testPositiveAssertion() {
+        double.zeroArgumentCommand()
+        AssertDouble(double, wasSent: "zeroArgumentCommand()")
+    }
+
+    func testNegativeAssertion() {
+        double.zeroArgumentCommand()
+        AssertDouble(double, wasNotSent: "zeroArgumentCommand()")
+    }
 }
