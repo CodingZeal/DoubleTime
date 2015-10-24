@@ -15,6 +15,7 @@
 		250CE9861BD9B51300727FC9 /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9851BD9B51300727FC9 /* TestDouble.swift */; };
 		250CE9881BD9B61C00727FC9 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9871BD9B61C00727FC9 /* Assertions.swift */; };
 		250CE98A1BDADBCC00727FC9 /* CallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9891BDADBCC00727FC9 /* CallHandler.swift */; };
+		256F79001BDB02FE00E53DE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256F78FF1BDB02FE00E53DE4 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		250CE9851BD9B51300727FC9 /* TestDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
 		250CE9871BD9B61C00727FC9 /* Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		250CE9891BDADBCC00727FC9 /* CallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallHandler.swift; sourceTree = "<group>"; };
+		256F78FF1BDB02FE00E53DE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256F79001BDB02FE00E53DE4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				250CE9691BD9957600727FC9 /* DoubleTime */,
 				250CE9751BD9957600727FC9 /* DoubleTimeTests */,
 				250CE9681BD9957600727FC9 /* Products */,
+				256F78FF1BDB02FE00E53DE4 /* XCTest.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -333,6 +337,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = DoubleTime/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -352,6 +360,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = DoubleTime/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -401,6 +413,7 @@
 				250CE97D1BD9957600727FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		250CE97E1BD9957600727FC9 /* Build configuration list for PBXNativeTarget "DoubleTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +422,7 @@
 				250CE9801BD9957600727FC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
