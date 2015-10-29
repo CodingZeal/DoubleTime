@@ -14,7 +14,7 @@
 		250CE9841BD9B4D500727FC9 /* ExampleDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */; };
 		250CE9861BD9B51300727FC9 /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9851BD9B51300727FC9 /* TestDouble.swift */; };
 		250CE9881BD9B61C00727FC9 /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9871BD9B61C00727FC9 /* Assertions.swift */; };
-		250CE98A1BDADBCC00727FC9 /* CallHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9891BDADBCC00727FC9 /* CallHandler.swift */; };
+		250CE98A1BDADBCC00727FC9 /* MessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250CE9891BDADBCC00727FC9 /* MessageHandler.swift */; };
 		251B31E31BE14B1D0067F2D0 /* StubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B31E21BE14B1D0067F2D0 /* StubTests.swift */; };
 		251B31E51BE1546C0067F2D0 /* MethodDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B31E41BE1546C0067F2D0 /* MethodDouble.swift */; };
 		256F79001BDB02FE00E53DE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256F78FF1BDB02FE00E53DE4 /* XCTest.framework */; };
@@ -41,7 +41,7 @@
 		250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDouble.swift; sourceTree = "<group>"; };
 		250CE9851BD9B51300727FC9 /* TestDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
 		250CE9871BD9B61C00727FC9 /* Assertions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
-		250CE9891BDADBCC00727FC9 /* CallHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallHandler.swift; sourceTree = "<group>"; };
+		250CE9891BDADBCC00727FC9 /* MessageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageHandler.swift; sourceTree = "<group>"; };
 		251B31E21BE14B1D0067F2D0 /* StubTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubTests.swift; sourceTree = "<group>"; };
 		251B31E41BE1546C0067F2D0 /* MethodDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodDouble.swift; sourceTree = "<group>"; };
 		256F78FF1BDB02FE00E53DE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -91,7 +91,7 @@
 			children = (
 				250CE9871BD9B61C00727FC9 /* Assertions.swift */,
 				250CE9851BD9B51300727FC9 /* TestDouble.swift */,
-				250CE9891BDADBCC00727FC9 /* CallHandler.swift */,
+				250CE9891BDADBCC00727FC9 /* MessageHandler.swift */,
 				250CE96A1BD9957600727FC9 /* DoubleTime.h */,
 				250CE96C1BD9957600727FC9 /* Info.plist */,
 				251B31E41BE1546C0067F2D0 /* MethodDouble.swift */,
@@ -221,7 +221,7 @@
 			files = (
 				250CE9881BD9B61C00727FC9 /* Assertions.swift in Sources */,
 				251B31E51BE1546C0067F2D0 /* MethodDouble.swift in Sources */,
-				250CE98A1BDADBCC00727FC9 /* CallHandler.swift in Sources */,
+				250CE98A1BDADBCC00727FC9 /* MessageHandler.swift in Sources */,
 				250CE9861BD9B51300727FC9 /* TestDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

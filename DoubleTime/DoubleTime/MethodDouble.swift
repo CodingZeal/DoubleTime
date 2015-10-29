@@ -6,7 +6,7 @@ public class MethodDouble {
         returnValue = value
     }
 
-    func handleSend<T>() -> T? {
+    func handleMessage<T>() -> T? {
         wasSent = true
         return returnValue as? T
     }

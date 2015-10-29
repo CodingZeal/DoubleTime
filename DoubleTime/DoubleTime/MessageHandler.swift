@@ -1,12 +1,12 @@
-public class CallHandler {
+public class MessageHandler {
     private var methods = [String: MethodDouble]()
 
     func stub(message: String) -> MethodDouble {
         return doubleForMessage(message)
     }
 
-    func handleCall<T>(message: String) -> T? {
-        return doubleForMessage(message).handleSend()
+    func handleMessage<T>(message: String) -> T? {
+        return doubleForMessage(message).handleMessage()
     }
     
     func wasSent(message: String) -> Bool {

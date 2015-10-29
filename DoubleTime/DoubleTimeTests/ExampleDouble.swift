@@ -1,13 +1,13 @@
 @testable import DoubleTime
 
 class ExampleDouble: ExampleProtocol, TestDouble {
-    let handler =  CallHandler()
+    let handler =  MessageHandler()
     
     func zeroArgumentCommand() {
-        handleCall()
+        handleMessage()
     }
 
     func simpleQuery() -> Int {
-        return handleCall() ?? 0
+        return handleMessage() ?? 0
     }
 }

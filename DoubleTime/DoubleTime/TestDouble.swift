@@ -1,9 +1,9 @@
 public protocol TestDouble {
-    var handler: CallHandler { get }
+    var handler: MessageHandler { get }
 
     func stub(message: String) -> MethodDouble
 
-    func handleCall<T>(message: String) -> T?
+    func handleMessage<T>(message: String) -> T?
 
     func wasSent(message: String) -> Bool
 }
@@ -13,12 +13,12 @@ extension TestDouble {
         return handler.stub(message)
     }
 
-    func handleCall<T>(message: String = __FUNCTION__) -> T? {
-        return handler.handleCall(message)
+    func handleMessage<T>(message: String = __FUNCTION__) -> T? {
+        return handler.handleMessage(message)
     }
 
-    func handleCall(message: String = __FUNCTION__) {
-        let _: Void? = handleCall(message)
+    func handleMessage(message: String = __FUNCTION__) {
+        let _: Void? = handleMessage(message)
     }
 
     func wasSent(message: String) -> Bool {
