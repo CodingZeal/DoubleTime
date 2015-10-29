@@ -1,11 +1,23 @@
 public class CallHandler {
-    private var callLog = [String]()
+    private var methods = [String: MethodDouble]()
 
-    func handleCall(message: String) {
-        callLog.append(message)
+    func stub(message: String) -> MethodDouble {
+        return doubleForMessage(message)
+    }
+
+    func handleCall<T>(message: String) -> T? {
+        return doubleForMessage(message).handleSend()
     }
     
     func wasSent(message: String) -> Bool {
-        return callLog.contains() { $0 == message }
+        return doubleForMessage(message).wasSent
+    }
+
+    func doubleForMessage(message: String) -> MethodDouble {
+        if methods[message] == nil {
+            methods[message] = MethodDouble()
+        }
+
+        return methods[message]!
     }
 }

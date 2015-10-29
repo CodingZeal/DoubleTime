@@ -6,4 +6,8 @@ class ExampleDouble: ExampleProtocol, TestDouble {
     func zeroArgumentCommand() {
         handleCall()
     }
+
+    func simpleQuery() -> Int {
+        return handleCall() ?? 0
+    }
 }
