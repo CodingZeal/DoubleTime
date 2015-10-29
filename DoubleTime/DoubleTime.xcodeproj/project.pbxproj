@@ -103,10 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				250CE9761BD9957600727FC9 /* SpyTests.swift */,
+				251B31E21BE14B1D0067F2D0 /* StubTests.swift */,
 				250CE9811BD9B49000727FC9 /* ExampleProtocol.swift */,
 				250CE9831BD9B4D500727FC9 /* ExampleDouble.swift */,
 				250CE9781BD9957600727FC9 /* Info.plist */,
-				251B31E21BE14B1D0067F2D0 /* StubTests.swift */,
 			);
 			path = DoubleTimeTests;
 			sourceTree = "<group>";
