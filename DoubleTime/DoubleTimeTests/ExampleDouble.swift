@@ -7,6 +7,10 @@ class ExampleDouble: ExampleProtocol, TestDouble {
         handleMessage()
     }
 
+    func multiArgumentCommand(number: Int, withKeyword keyword: String) {
+        handleMessage(with: number, keyword)
+    }
+
     func simpleQuery() -> Int {
         return handleMessage() ?? 0
     }

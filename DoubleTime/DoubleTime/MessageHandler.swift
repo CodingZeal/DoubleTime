@@ -5,15 +5,15 @@ public class MessageHandler {
         return doubleForMessage(message)
     }
 
-    func handleMessage<T>(message: String) -> T? {
-        return doubleForMessage(message).handleMessage()
+    func handleMessage<T>(message: String, with args: Any...) -> T? {
+        return doubleForMessage(message).handleMessage(args)
     }
     
-    func wasSent(message: String) -> Bool {
-        return doubleForMessage(message).wasSent
+    func wasSent(message: String, with args: Any...) -> Bool {
+        return doubleForMessage(message).wasSent(with: args)
     }
 
-    func doubleForMessage(message: String) -> MethodDouble {
+    private func doubleForMessage(message: String) -> MethodDouble {
         if methods[message] == nil {
             methods[message] = MethodDouble()
         }

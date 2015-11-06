@@ -14,6 +14,18 @@ class SpyTests: XCTestCase {
         XCTAssertFalse(double.wasSent("zeroArgumentCommand()"))
     }
 
+    func testConfirmsThatSpyWasCalledWithArguments() {
+        double.multiArgumentCommand(42, withKeyword: "KEYWORD")
+
+        XCTAssert(double.wasSent("multiArgumentCommand(_:withKeyword:)", with: 42, "KEYWORD"))
+    }
+
+//    func testFailsWhenSpyCalledWithIncorrectArguments() {
+//        double.multiArgumentCommand(43, withKeyword: "KEYWORD")
+//
+//        XCTAssertFalse(double.wasSent("multiArgumentCommand(_:withKeyword:)", with: 42, "KEYWORD"))
+//    }
+
     func testPositiveAssertion() {
         double.zeroArgumentCommand()
         AssertDouble(double, wasSent: "zeroArgumentCommand()")
