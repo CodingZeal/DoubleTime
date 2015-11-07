@@ -4,14 +4,14 @@ class ExampleDouble: ExampleProtocol, TestDouble {
     let handler =  MessageHandler()
     
     func zeroArgumentCommand() {
-        handleMessage()
+        handler.handleMessage()
     }
 
     func multiArgumentCommand(number: Int, withKeyword keyword: String) {
-        handleMessage(with: number, keyword)
+        handler.handleMessage(with: number, keyword)
     }
 
     func simpleQuery() -> Int {
-        return handleMessage() ?? 0
+        return handler.handleMessage() ?? 0
     }
 }
